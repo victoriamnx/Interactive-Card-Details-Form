@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: url(components/images/bg-main-desktop.png) #fff;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 30.1875rem 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7.94rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.63px;
+}
+
+label {
+  color: var(--deep-violet, #21092f);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+input {
+  color: var(--deep-violet, #21092f);
+  opacity: 0.25;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  padding: 1rem;
+  width: 23.8125rem;
+  height: 2.8125rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dfdee0;
+}
+
+button {
+  width: 23.8125rem;
+  height: 3.3125rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--deep-violet, #21092f);
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#Teste {
+  display: flex;
+  gap: 2.75rem;
+  flex-direction: column;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.31rem;
+}
+
+#frontCard {
+  width: 27.9375rem;
+  height: 15.3125rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: linear-gradient(164deg, #6348fe 0%, #610595 100%);
+  background: url(components/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#backCard {
+  width: 27.9375rem;
+  height: 15.3125rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: linear-gradient(169deg, #fff 0%, #d2d3d9 100%);
+  background: url(components/images/bg-card-back.png);
+  background-repeat: no-repeat;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
