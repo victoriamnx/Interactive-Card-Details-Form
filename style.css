@@ -31,14 +31,101 @@ main {
   gap: 7.94rem;
 }
 
-form {
+#cardInfo {
+  display: flex;
+  gap: 2.75rem;
+  flex-direction: column;
+}
+
+#cards {
   display: flex;
   flex-direction: column;
-  gap: 1.63px;
+  gap: 2.31rem;
+  width: 447px;
+}
+
+#frontCard {
+  display: flex;
+  width: 27.9375rem;
+  height: 15.3125rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: linear-gradient(164deg, #6348fe 0%, #610595 100%);
+  background: url(components/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#cardNumbers {
+  display: flex;
+  width: 27.9375rem;
+  color: var(--white, #fff);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.21388rem;
+}
+
+#nameAndDate {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12.19638rem;
+}
+
+h1,
+h2 {
+  color: var(--white, #fff);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+#backCard {
+  display: flex;
+  width: 27.9375rem;
+  height: 15.3125rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: linear-gradient(169deg, #fff 0%, #d2d3d9 100%);
+  background: url(components/images/bg-card-back.png);
+  background-repeat: no-repeat;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 50px;
+  color: var(--white, #fff);
+  text-align: right;
+  font-family: Space Grotesk;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  width: 23.8125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.63rem;
 }
 
 label {
-  color: var(--deep-violet, #21092f);
+  color: hsla(278, 68%, 11%, 1);
   font-family: "Space Grotesk", sans-serif;
   font-size: 0.75rem;
   font-style: normal;
@@ -46,6 +133,23 @@ label {
   line-height: normal;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
+}
+
+#expAndCvc {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+}
+
+#expDate {
+  display: flex;
+  flex-direction: column;
+}
+
+#mandY {
+  display: flex;
+  flex-direction: row;
+  gap: 0.63rem;
 }
 
 input {
@@ -61,7 +165,19 @@ input {
   width: 23.8125rem;
   height: 2.8125rem;
   border-radius: 0.5rem;
-  border: 1px solid #dfdee0;
+  border: 1px solid hsla(278, 3%, 87%, 1);
+}
+
+#mandY input {
+  width: 80px;
+  height: 45px;
+  flex-shrink: 0;
+}
+
+#cvc input {
+  width: 11.9375rem;
+  height: 2.8125rem;
+  flex-shrink: 0;
 }
 
 button {
@@ -79,44 +195,10 @@ button {
   line-height: normal;
 }
 
-.attribution {
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-#Teste {
-  display: flex;
-  gap: 2.75rem;
-  flex-direction: column;
-}
-
-#cards {
-  display: flex;
-  flex-direction: column;
-  gap: 2.31rem;
-}
-
-#frontCard {
-  width: 27.9375rem;
-  height: 15.3125rem;
-  flex-shrink: 0;
-  border-radius: 0.625rem;
-  background: linear-gradient(164deg, #6348fe 0%, #610595 100%);
-  background: url(components/images/bg-card-front.png);
-  background-repeat: no-repeat;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-#backCard {
-  width: 27.9375rem;
-  height: 15.3125rem;
-  flex-shrink: 0;
-  border-radius: 0.625rem;
-  background: linear-gradient(169deg, #fff 0%, #d2d3d9 100%);
-  background: url(components/images/bg-card-back.png);
-  background-repeat: no-repeat;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+} */
