@@ -41,7 +41,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2.31rem;
-  width: 447px;
+  width: 550px;
 }
 
 #frontCard {
@@ -112,6 +112,8 @@ h2 {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.125rem;
+  position: relative;
+  left: 100px;
   text-transform: uppercase;
 }
 
