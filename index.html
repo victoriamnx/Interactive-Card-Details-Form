@@ -29,7 +29,8 @@
             </div>
           </div>
         </div>
-        <div id="backCard">000</div>
+        <div id="backCard">
+          <h2>000</h2></div>
       </div>
 
       <div id="cardInfo">
@@ -38,18 +39,20 @@
             <label for="name">Cardholder Name</label>
             <input
               type="text"
-              id="fname"
-              name="fname"
+              id="cardholderName"
+              name="cardholderName"
               placeholder="e.g. Jane Appleseed"
+              oninput="updateCardholderName()"
             />
           </div>
           <div>
-            <label for="lname">Card Number</label>
+            <label for="lname"></label>
             <input
               type="text"
-              id="lname"
-              name="lname"
+              id="cardNumber"
+              name="cardNumber"
               placeholder="e.g. 1234 5678 9123 0000"
+              oninput="updatecardNumber()"
             />
           </div>
 
@@ -57,17 +60,23 @@
             <div id="expDate">
               <label for="fname">Exp. Date (MM/YY)</label>
               <div id="mandY">
-                <input type="number" id="date" name="month" placeholder="MM" />
-                <input type="number" id="date" name="year" placeholder="YY" />
+                <input
+                  type="text"
+                  id="month"
+                  name="month"
+                  placeholder="MM/YY"
+                  oninput="updateMonth()"
+                />
               </div>
             </div>
             <div id="cvc">
               <label for="fname">CVC</label>
               <input
-                type="number"
-                id="date"
-                name="cvc"
-                placeholder="e.g. 123"
+              type="number"
+              id="cvc"
+              name="cvc"
+              placeholder="e.g. 123"
+              oninput="updateCvc()"
               />
             </div>
           </div>
