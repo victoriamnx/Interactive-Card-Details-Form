@@ -83,10 +83,12 @@ main {
 }
 
 #nameAndDate {
-  display: inline-flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 12.19638rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 22.9375rem;
+  align-content: center;
+  flex-direction: row;
 }
 
 h1,
@@ -114,6 +116,11 @@ h2 {
   align-items: center;
   justify-content: flex-end;
   padding: 50px;
+  position: relative;
+  left: 100px;
+}
+
+#backCard h2{
   color: var(--white, #fff);
   text-align: right;
   font-family: Space Grotesk;
@@ -122,9 +129,6 @@ h2 {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.125rem;
-  position: relative;
-  left: 100px;
-  text-transform: uppercase;
 }
 
 form {
@@ -181,7 +185,7 @@ input {
 }
 
 #mandY input {
-  width: 5rem;
+  width: 10rem;
   height: 45px;
   flex-shrink: 0;
 }
