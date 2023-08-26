@@ -24,11 +24,12 @@
           <div id="info">
             <div id="cardNumbers">0000 0000 0000 0000</div>
             <div id="nameAndDate">
-              <h1>JANE APPLESEED</h1>
+              <div id="name"><h1>JANE APPLESEED</h1></div>
               <h2>00/00</h2>
             </div>
           </div>
         </div>
+
         <div id="backCard">
           <h2>000</h2>
         </div>
@@ -70,11 +71,11 @@
                 />
               </div>
             </div>
-            <div id="cvc">
+            <div id="cvcContainer">
               <label for="fname">CVC</label>
               <input
                 type="number"
-                id="cvc"
+                id="cvcInput"
                 name="cvc"
                 placeholder="e.g. 123"
                 oninput="updateCvc()"
