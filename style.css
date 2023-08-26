@@ -91,6 +91,12 @@ main {
   flex-direction: row;
 }
 
+#name {
+  display: flex;
+  width: 290px;
+  overflow: hidden;
+}
+
 h1,
 h2 {
   color: var(--white, #fff);
@@ -120,7 +126,7 @@ h2 {
   left: 100px;
 }
 
-#backCard h2{
+#backCard h2 {
   color: var(--white, #fff);
   text-align: right;
   font-family: Space Grotesk;
@@ -184,13 +190,17 @@ input {
   border: 1px solid hsla(278, 3%, 87%, 1);
 }
 
+/* #cardholderName input:active {
+background-color: ;
+} */
+
 #mandY input {
   width: 10rem;
   height: 45px;
   flex-shrink: 0;
 }
 
-#cvc input {
+#cvcContainer input {
   width: 11.9375rem;
   height: 2.8125rem;
   flex-shrink: 0;
