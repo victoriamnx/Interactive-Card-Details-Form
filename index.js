@@ -7,7 +7,13 @@ function updateCardholderName() {
 
 function updatecardNumber() {
   const input = document.getElementById("cardNumber");
-  const nameElement = document.querySelector("#frontCard #cardNumbers ");
+  const nameElement = document.querySelector("#frontCard #cardNumbers");
+
+  const maxCharacters = 19;
+
+  if (input.value.length > maxCharacters) {
+    input.value = input.value.slice(0, maxCharacters);
+  }
 
   nameElement.textContent = input.value;
 }
@@ -20,8 +26,14 @@ function updateMonth() {
 }
 
 function updateCvc() {
-  const input = document.getElementById("cvc");
+  const input = document.getElementById("cvcInput");
   const nameElement = document.querySelector("#backCard h2");
+
+  const maxCharacters = 3;
+
+  if (input.value.length > maxCharacters) {
+    input.value = input.value.slice(0, maxCharacters);
+  }
 
   nameElement.textContent = input.value;
 }
