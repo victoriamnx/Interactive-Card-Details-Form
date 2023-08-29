@@ -73,7 +73,7 @@ main {
 #cardNumbers {
   display: flex;
   width: 27.9375rem;
-  color: var(--white, #fff);
+  color: #fff;
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.75rem;
   font-style: normal;
@@ -99,7 +99,7 @@ main {
 
 h1,
 h2 {
-  color: var(--white, #fff);
+  color: #fff;
   font-family: "Space Grotesk", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
@@ -127,7 +127,7 @@ h2 {
 }
 
 #backCard h2 {
-  color: var(--white, #fff);
+  color: #fff;
   text-align: right;
   font-family: Space Grotesk;
   font-size: 0.875rem;
@@ -187,12 +187,9 @@ input {
   width: 23.8125rem;
   height: 2.8125rem;
   border-radius: 0.5rem;
-  border: 1px solid hsla(278, 3%, 87%, 1);
+  outline: none;
+  border: 2px solid hsla(278, 3%, 87%, 1);
 }
-
-/* #cardholderName input:active {
-background-color: ;
-} */
 
 #mandY input {
   width: 10rem;
@@ -204,6 +201,18 @@ background-color: ;
   width: 11.9375rem;
   height: 2.8125rem;
   flex-shrink: 0;
+}
+
+#numberCard-error {
+  display: flex;
+  position: relative;
+  top: 0.5rem;
+  color: var(--red, #ff5050);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 button {

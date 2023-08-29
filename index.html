@@ -53,9 +53,12 @@
               type="text"
               id="cardNumber"
               name="cardNumber"
+              maxlength="{19}"
               placeholder="e.g. 1234 5678 9123 0000"
-              oninput="updatecardNumber()"
+              oninput="updateAndValidateCardNumber()"
             />
+
+            <span id="numberCard-error"></span>
           </div>
 
           <div id="expAndCvc">
