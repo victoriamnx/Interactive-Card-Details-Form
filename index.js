@@ -53,3 +53,10 @@ function updateAndValidateCardNumber() {
   }
 }
 
+document.getElementById("confirmButton").addEventListener("click", function () {
+  document.getElementById("completeState").style.display = "block";
+
+  setTimeout(function () {
+    document.getElementById("completeState").style.display = "none";
+  }, 5000); // 5000 milliseconds = 5 seconds
+});

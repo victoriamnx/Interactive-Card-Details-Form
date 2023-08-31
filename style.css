@@ -189,6 +189,7 @@ input {
   border-radius: 0.5rem;
   outline: none;
   border: 2px solid hsla(278, 3%, 87%, 1);
+  margin-top: 10px;
 }
 
 #mandY input {
@@ -219,12 +220,7 @@ button {
   display: block;
   width: 23.8125rem;
   height: 3.3125rem;
-  background-image: linear-gradient(
-    to right,
-    #4776e6 0%,
-    #8e54e9 51%,
-    #4776e6 100%
-  );
+  background: var(--Deep-Violet, #21092f);
   transition: 0.5s;
   box-shadow: 0 0 20px #eee;
   background-size: 200% auto;
@@ -253,3 +249,36 @@ button:hover {
 .attribution a {
   color: hsl(228, 45%, 44%);
 } */
+
+#completeState {
+  width: 381px;
+  height: 291px;
+  display: flex;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  gap: 20px;
+}
+
+#completeState h1 {
+  color: var(--Deep-Violet, #21092f);
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.21388rem;
+}
+
+#completeState p {
+  color: var(--Purplish-Grey, #8f8694);
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
